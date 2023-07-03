@@ -110,6 +110,8 @@ function perfectNumber(numbers) {
 }
 
 perfectNumber(114)
+perfectNumber(114)
+
 
 
 //Decimel To Binary 
