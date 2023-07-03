@@ -18,6 +18,8 @@ function find(letter){
 };
 
 console.log("testing")
+console.log("testing")
+
 
 
 
