@@ -488,4 +488,146 @@ if(sayac%2==1){
  sayac++
 
 }while(sayac<=20)
-console.log("1 den 20'ye kadar tek sayilrin Toplami : "+toplam)
+console.log("1 den 20'ye kadar tek sayilrin Toplami : "+toplam);
+
+
+//------------------------------------ Break And Continue------------------------------------
+
+
+for(i=1; i<=10; i++){
+    console.log(i)
+    if (i==8) {
+        break;
+    }
+}
+
+
+let sayac1 = 1;
+
+while(sayac1<=20){
+    console.log(sayac1);
+    if(sayac1==13){
+        break;
+    }
+    sayac1++
+}
+
+// ? Continue donguyu bir kereye mahsus kirmak:
+
+for(i=1; i<=20; i++){
+    if(i>20){
+        break;
+    }
+     if(i==7){
+        continue;
+     }console.log(i);
+    
+}
+
+
+
+//-------------------------------------Metodlar(Methods---------------------------
+/*
+        her hengi bir kod blokunu istedigimiz yerde copy&paste yapmadan
+         kullanabilmek icin metodlari kullaniriz.
+        
+         function metodIsmi(Parametra,.......){
+            kodlar.......
+         }
+*/
+ //            Parametresiz Metodlar
+
+ //  void : geriye deger dondurmeyen fonksiyon
+
+function yazdir(){
+    console.log("Rahamet Nazar")
+} // bu bir metoddir ve istedigimiz yerde cagirarak calistirabilriz.
+
+yazdir(); // metodumuzu cagirdik
+
+
+function sum(){
+    a = 5
+    b = 8
+    console.log(a+b)
+}
+
+sum()
+
+
+//             Parametreli Metodlar
+
+// function userName(name,sureName){
+    
+//     console.log(name+" "+sureName);
+// }
+
+// userName("Rahmet","Nazar");
+// userName("Rafiq","Nazar");
+
+// let yas = Number(prompt("yasinizi giriniz "));
+
+// function chekIt(age) {
+//     if(yas>=18){
+//         alert("Ehliyet Almaya Uygunsunuz")
+//     }else{
+//         alert("Ehliyet Almazsiniz.")
+//     }
+    
+// }
+
+// chekIt(yas);
+
+
+//   :  geriye deger donduren metod :
+
+// return : bir metodun degerini baska bir yerde kullanabilmek icin kullnilir ve buna da geriye donduren metod denir
+
+
+
+
+// function cube(number){
+//     let resault = number*number*number;
+//     return resault; //! resault degiskenini disrida kullanabilmek ve foksiyonu bitirmek icin return kullandik.
+// }
+
+// let toFindCube = cube(2);
+// console.log(toFindCube)
+
+// function kare(number) {
+//     let resault = number*number;
+//     console.log(resault);
+    
+// }
+
+// kare(toFindCube);
+
+
+
+//--------------------------------- Diziler [Array]---------------------------
+// bir den fazla verileri tek cati altinda tutmak icin kullanilir.
+
+// let dizi = ['rahmet',21,true,null];
+// console.log(typeof dizi)
+
+// FOREACH dongusu
+
+let names = ["rahmet","nimat","rafiq","zehra"];
+names[1] = 20
+console.log(names);
+
+names.forEach(function(isim){
+    console.log(isim)
+});
+
+console.log("deneme")
+
+let Arry = [
+    [3,5,8,3,8,5],
+    [2,876,0,2,45634,8764],
+    [534,76,24,7]
+]
+for (i=0 ; i<Arry.length ; i++){
+    for (j=0 ; j<Arry[i].length ; j++)
+       console.log(Arry[i][j])
+}
